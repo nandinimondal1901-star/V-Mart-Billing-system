@@ -1,0 +1,159 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html>
+<head>
+    <title>V Mart Billing</title>
+</head>
+<body>
+
+<h2>V Mart</h2>
+<p>Kazon Gate, Burdwan</p>
+
+<h3>Stock: <span id="stock"></span></h3>
+<h3>Total Stock Value: ₹<span id="stockValue"></span></h3>
+
+<input type="number" id="qty" placeholder="Enter quantity">
+<button onclick="buy()">Generate Bill</button>
+
+<hr>
+
+<h3>Invoice</h3>
+<div id="invoice"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html> -->
+
+<!-- <!-- <!DOCTYPE html> -->
+<html>
+<head>
+    <title>V Mart Billing</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🛍️ V Mart Billing</h1>
+    <p>Kazon Gate, Burdwan</p>
+
+    <div class="card">
+        <h3>Stock Info</h3>
+        <div id="stockList"></div>
+    </div>
+    
+
+    <div class="card">
+        <h3>Create Bill</h3>
+
+        <input type="text" id="customer" placeholder="Customer Name">
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <select id="item"></select>
+
+
+        <input type="number" id="qty" placeholder="Quantity">
+
+        <button onclick="buy()">Generate Bill</button>
+    </div>
+
+    <div class="invoice-box" id="invoice">
+        invoice will come here --> -->
+    <!-- </div>
+
+    <!-- <!-- <button onclick="downloadPDF()">📄 Download PDF</button> -->
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+
+
+</body>
+</html> -->
+
+<button onclick="downloadPDF()">📄 Download PDF</button>
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>V Mart Billing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🛍️ V Mart Billing</h1>
+    <p>Kazon Gate, Burdwan</p>
+
+    <!-- STOCK INFO -->
+    <div class="card">
+        <h3>Stock Info</h3>
+        <div id="stockList"></div>
+    </div>
+
+    <!-- CREATE BILL -->
+    <div class="card">
+
+        <h3>Create Bill</h3>
+
+        <input type="text"
+               id="customer"
+               placeholder="Customer Name">
+
+        <input type="text"
+               id="phone"
+               placeholder="Phone Number">
+
+        <!-- PRODUCT SELECT -->
+        <select id="item">
+
+            <option value="Shirt">👕 Shirt</option>
+
+            <option value="Pant">👖 Pant</option>
+
+            <option value="Saree">🥻 Saree</option>
+
+            <option value="Shoes">👟 Shoes</option>
+
+        </select>
+
+        <input type="number"
+               id="qty"
+               placeholder="Quantity">
+
+        <button onclick="buy()">
+            Generate Bill
+        </button>
+
+    </div>
+
+    <!-- INVOICE -->
+    <div class="invoice-box" id="invoice">
+
+    </div>
+
+    <!-- PDF BUTTON -->
+    <button onclick="downloadPDF()">
+        📄 Download PDF
+    </button>
+
+</div>
+
+<!-- LIBRARIES -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html> -->
